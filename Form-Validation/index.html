@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" id ="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your Username">
+                    <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                <small>Error</small>
+            </div>
+            <div class ="form-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password"  name="confirmPassword" id="confirmPassword" placeholder="Confirm Your Password">
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <fieldset id="fieldset">
+                    <legend>Gender</legend>
+                    <input  type="radio" name="gender" value="Male" id="gMale"> <label for="sex"> Male</label> </br>
+                    <input type="radio" name="gender" value="Female" id="gFemale"> <label for="sex">Female</label>
+                </fieldset>
+                <small>Error</small>
+            </div>
+            <button id="button">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

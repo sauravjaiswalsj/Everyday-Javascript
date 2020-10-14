@@ -23,17 +23,24 @@ body{
     margin-bottom: 30px;
 }
 .movie-container select{
-    background-color:#fff;
+    background-color:#3f3d53;
     border: 0;
+    color:#fff;
     border-radius: 10px;
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 18px;
     padding: 5px 15px 5px 15px;
     -mox-appearance:none;
     -webkit-apprearance:none;
     appearance: none;
+    cursor: pointer;
 }
-
+.movie-container select:focus{
+    
+    background-color:#fff;
+    color:#000;
+    transform: scale(1.1);
+}
 .seat{
     background-color:#444451;
     height: 12px;
@@ -60,7 +67,7 @@ body{
     cursor: pointer;
     transform: scale(1.4);
 }
-.showcase .seat.seat:not(.occupied):hover{
+.showcase .seat:not(.occupied):hover{
     cursor: default;
     transform: scale(1);
 }

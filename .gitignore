@@ -7,3 +7,6 @@
 /*.vscode
 # Local History for Visual Studio Code
 .history/
+
+# Local Netlify folder
+.netlify

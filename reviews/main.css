@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #F1F5F8;
+}
+main{
+    min-height:80vh;
+    display: grid;
+    place-items: center;
+}
+.underline{
+    height: 4px;
+    width: 80px;
+    background-color:rgb(73 166 233);
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    box-shadow: 10px 12px 15px 0.5rem rgba(48, 44, 44, 0.2);
+    border-radius: 25px;
+    border:0 solid #333;
+    padding: 1.5rem 2rem;
+    max-width: 50%; /* For making responsive box*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

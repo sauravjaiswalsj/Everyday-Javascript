@@ -4,7 +4,7 @@ body{
     background-color: #F1F5F8;
 }
 main{
-    min-height:80vh;
+    min-height:70vh;
     display: grid;
     place-items: center;
 }
@@ -20,7 +20,7 @@ main{
     border-radius: 25px;
     border:0 solid #333;
     padding: 1.5rem 2rem;
-    max-width: 50%; /* For making responsive box*/
+    max-width: 40%; /* For making responsive box*/
     margin-left: auto;
     margin-right: auto;
     text-align: center;

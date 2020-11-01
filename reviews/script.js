@@ -47,7 +47,7 @@ const surprise = document.querySelector('.surprise');
 
 let currentItem = 0;
 
-const addData = ()=>{
+const showData = (currentItem)=>{
   const item =  reviews[currentItem];
   image.src=item.img;
   author.textContent=item.name;
@@ -55,4 +55,25 @@ const addData = ()=>{
   info.textContent=item.text;
 }
 
-window.addEventListener('DOMContentLoaded',addData());
+window.addEventListener('DOMContentLoaded',showData(currentItem));
+//surprise.addEventListener('click',randomData());
+prev.addEventListener('click', ()=>{
+  currentItem--;
+  if(currentItem < 0){
+    currentItem=reviews.length-1;
+  }
+  showData(currentItem);
+});
+next.addEventListener('click',()=>{
+  currentItem++;
+  if(currentItem>reviews.length-1){
+      currentItem=0;
+  }
+  showData(currentItem);
+});
+
+surprise.addEventListener('click',()=>{
+  const random = (Math.random()*10)%reviews.length;
+  currentItem=Math.trunc(random);
+  showData(currentItem);
+})

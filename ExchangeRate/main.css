@@ -1,0 +1,47 @@
+:root{
+    --primary-color: #5fbaa7;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin: 0;
+    padding: 60px;
+}
+
+h1{
+    margin-left: 5%;
+    text-align: center;
+    color: var(--primary-color);
+}
+p{
+    text-align: center;
+}
+
+.card-box{
+    margin-left: 20%;
+}
+#Amount{
+    padding: 0%;
+    width:20%;
+    text-align: right;
+}
+.dark-mode{
+    float: right;
+    margin-right: 0.5%;
+    border-radius: 10px;
+    padding: 50 px;
+    background-color: #311eda96;
+    color: #fff;
+};
+.dark-theme{
+    background-color: black;
+    color: white;
+}
